@@ -1,0 +1,9 @@
+{
+  "name": "room-model",
+  "ts": {
+    "path": "ts",
+    "files": [
+      "*"
+    ]
+  }
+}

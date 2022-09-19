@@ -1,0 +1,9 @@
+{
+  "name": "user-model",
+  "ts": {
+    "path": "ts",
+    "files": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "controllers",
+  "ts": {
+    "path": "ts",
+    "files": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scope": "community",
+  "name": "bescord",
+  "title": "Bescord",
+  "description": "Basic Web Backend application",
+  "layout": "main-layout",
+  "template": "template/template.json",
+  "languages": {
+    "default": "en",
+    "supported": [
+      "en",
+      "es"
+    ]
+  },
+  "params": {},
+  "modules": {
+    "path": "modules",
+    "externals": {}
+  },
+  "deployment": {
+    "distributions": [
+      {
+        "name": "web",
+        "platform": "web",
+        "environment": "development",
+        "port": 1234,
+        "ports": {
+          "bundles": 3001,
+          "http": 8081,
+          "inspect": 8082
+        },
+        "backend": "backend",
+        "default": true
+      },
+      {
+        "name": "backend",
+        "platform": "backend",
+        "environment": "development",
+        "port": 3002,
+        "ports": {
+          "inspect": 8083
+        }
+      }
+    ]
+  }
+}

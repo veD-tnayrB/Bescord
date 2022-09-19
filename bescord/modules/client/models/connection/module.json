@@ -1,0 +1,9 @@
+{
+  "name": "connection-model",
+  "ts": {
+    "path": "ts",
+    "files": [
+      "*"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "usebinder",
+  "ts": {
+    "path": "ts",
+    "files": [
+      "*"
+    ]
+  }
+}
