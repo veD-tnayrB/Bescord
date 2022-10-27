@@ -1,11 +1,11 @@
 import { ReactiveModel } from '@community/bescord/reactive-model';
-import { IRoom } from '@community/bescord/room-model';
+import Peer from 'peerjs';
+// import { IRoom } from '@community/bescord/room-model';
 
 class User extends ReactiveModel {
-    id: string;
-    room: IRoom;
+    peer: Peer;
 
-    #stream: MediaStream = undefined;
+    #stream: MediaStream | undefined = undefined;
     get stream() {
         return this.#stream;
     }

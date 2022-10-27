@@ -4,7 +4,7 @@
     "element": {
       "name": "room-page"
     },
-    "route": "/room",
+    "route": "/rooms",
     "is": "page",
     "sass": {
       "path": "/widget/sass",

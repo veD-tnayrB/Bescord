@@ -17,6 +17,6 @@ function Video(): JSX.Element {
     }, [stream]);
 
     return (
-        <video controls ref={videoRef} autoPlay muted />
+        <video ref={videoRef} autoPlay muted />
     )
 }

@@ -1,7 +1,7 @@
-import { rooms } from './types/room';
+import { meet } from './events/meet';
 
 export /*bundle*/ const ioListener = (io) => {
     io.on('connect', (socket) => {
-        rooms(socket);
+        meet(socket);
     });
-}
+};

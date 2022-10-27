@@ -1,8 +1,6 @@
-import { IRoom } from '@community/bescord/room-model';
+import Peer from "peerjs";
 
-export /*bundle*/
-interface IUser {
-    id: string;
-    room: IRoom;
+export /*bundle*/ interface IUser {
+    peer: Peer,
     stream: MediaStream
 }

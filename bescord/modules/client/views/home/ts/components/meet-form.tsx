@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { routing } from '@beyond-js/kernel/routing';
 import { v4 as uuid } from 'uuid';
 import { connection } from '@community/bescord/connection-model';
 import { user } from '@community/bescord/user-model';
@@ -15,7 +16,8 @@ function MeetForm(): JSX.Element {
     function enterMeet(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         user.room = new Room(roomId);
-        connection.socket.emit('join-room', { user, room: user.room });
+        connection.socket.emit('join-meet', { room: { id: roomId }, user });
+        routing.pushState(`/rooms?room=${roomId}`);
     }
 
     return (
